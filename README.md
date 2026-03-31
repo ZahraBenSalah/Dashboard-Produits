@@ -25,7 +25,7 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
 - **Plotly** – graphiques interactifs dans Streamlit  
 - **Docker** – déploiement et containerisation  
 - **Prefect (optionnel)** – suivi des logs ETL / monitoring avancé
-- - **Apache Kafka** – ingestion streaming temps réel  
+- **Apache Kafka** – ingestion streaming temps réel  
 
 ---
 

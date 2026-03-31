@@ -25,18 +25,19 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
 - **Plotly** – graphiques interactifs dans Streamlit  
 - **Docker** – déploiement et containerisation  
 - **Prefect (optionnel)** – suivi des logs ETL / monitoring avancé
+- - **Apache Kafka** – ingestion streaming temps réel  
 
 ---
 
-## 3-Architecture du pipeline
+### 3️⃣ Architecture du pipeline
 
 ```text
            ┌───────────────┐
-           │   Ingestion   │ CSV/API
+           │   Ingestion   │ (CSV / API / Kafka)
            └───────┬───────┘
                    │
            ┌───────▼───────┐
-           │   Nettoyage   │ (supprimer NaN, convertir prix)
+           │   Nettoyage   │ (supprimer NaN, convertir prix, supprimer doublons)
            └───────┬───────┘
                    │
            ┌───────▼─────────────┐
@@ -46,7 +47,7 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
            └───────┬─────────────┘
                    │
            ┌───────▼─────────┐
-           │ Stockage SQLite │
+           │ Stockage SQLite │ (products_clean, prices_enriched, category_summary)
            └───────┬─────────┘
                    │
            ┌───────▼─────────┐
@@ -59,6 +60,7 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
 - CSV produits nettoyés (`raw/clean_*.csv`)  
 - Fichiers CSV provenant d’Amazon (`raw/amazon_*.csv`)  
 - API produit (`raw/products_api.csv`)
+- Kafka → simulation ingestion temps réel
 
 ---
 
@@ -72,6 +74,7 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
 | Plotly | Graphiques interactifs pour les prix et remises |
 | Docker | Déploiement reproductible et isolé |
 | Prefect / Logs | Suivi et monitoring des pipelines ETL |
+|Kafka   |Streaming temps réel pour ingestion et simulation
 
 ---
 

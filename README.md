@@ -1,6 +1,6 @@
 # Dashboard Produits et Prix
 
-## 1️⃣ Description du projet
+## 1-Description du projet
 
 Ce projet consiste à construire un **pipeline complet de traitement de données** pour des produits e-commerce, incluant :  
 - **Ingestion** de données depuis CSV et API.  
@@ -16,7 +16,7 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
 
 ---
 
-## 2️⃣ Stack technique
+## 2-Stack technique
 
 - **Python 3.8+** – langage principal  
 - **Pandas** – nettoyage et transformation de données  
@@ -28,7 +28,7 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
 
 ---
 
-## 3️⃣ Architecture du pipeline
+## 3-Architecture du pipeline
 
 ```text
            ┌───────────────┐
@@ -53,10 +53,9 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
            │  Dashboard      │
            │ Streamlit + Plotly
            └─────────────────┘
-
+```
 ---
-
-## 3️⃣ Sources de données utilisées
+## 4-Sources de données utilisées
 - CSV produits nettoyés (`raw/clean_*.csv`)  
 - Fichiers CSV provenant d’Amazon (`raw/amazon_*.csv`)  
 - API produit (`raw/products_api.csv`)

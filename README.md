@@ -62,7 +62,7 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
 
 ---
 
-## 4️⃣ Stack technologique avec justifications
+## 5-Stack technologique avec justifications
 | Technologie | Rôle / Justification |
 |------------|---------------------|
 | Python | Langage principal pour l’ETL et le dashboard |
@@ -75,7 +75,7 @@ Le projet illustre la gestion d’un **pipeline ETL simple mais complet** et l�
 
 ---
 
-## 5️⃣ Instructions d'installation/**********************************************/
+## 6-Instructions d'installation
 
 1. **Cloner le dépôt** :
 ```bash
@@ -94,7 +94,7 @@ docker build -t dashboard-produits .
 docker run -p 8501:8501 dashboard-produits
 
 Accéder ensuite à : http://localhost:8501
-
-6️⃣ Credentials / URL d'accès au déploiement
+```
+## 7-Credentials / URL d'accès au déploiement
 URL : http://localhost:8501 (local)
 Aucun login requis pour cette version
